@@ -38,7 +38,7 @@ def handle_join(message):
     pass
 
 
-@bot.message_handler(func=lambda message: message.chat.type == 'private', commands=['start', 'help'])
+@bot.message_handler(func=lambda message: message.chat.type == 'private', commands=['start'])
 def handle_start(message):
     try:
         chat_id = message.chat.id
@@ -48,24 +48,27 @@ def handle_start(message):
     pass
 
 
-# @bot.message_handler(func=lambda message: message.chat.type == 'private', commands=['link'])
-# def handle_start(message):
-#     try:
-#         chat_id = message.chat.id
-#         bot.send_message(chat_id, LINK_MESSAGE, parse_mode='HTML')
-#     except Exception as e:
-#         print(e)
-#     pass
-#
-#
-# @bot.message_handler(func=lambda message: message.chat.type == 'private', commands=['rules'])
-# def handle_start(message):
-#     try:
-#         chat_id = message.chat.id
-#         bot.send_message(chat_id, RULES, parse_mode='HTML')
-#     except Exception as e:
-#         print(e)
-#     pass
+@bot.message_handler(func=lambda message: message.chat.type == 'private', commands=['help'])
+def handle_help(message):
+    try:
+        chat_id = message.chat.id
+        bot.send_message(chat_id, HELP_MESSAGE)
+    except Exception as e:
+        print(e)
+    pass
+
+
+@bot.message_handler(func=lambda message: message.chat.type == 'group' or message.chat.type == 'supergroup',
+                     commands=['start', 'help'])
+def handle_group_start(message):
+    try:
+        chat_id = message.chat.id
+        message_id = message.message_id
+        bot.reply_to(message, HELP_MESSAGE_GROUP)
+        bot.delete_message(chat_id, message_id)
+    except Exception as e:
+        print(e)
+    pass
 
 
 bot.polling()
