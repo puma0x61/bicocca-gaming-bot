@@ -23,3 +23,9 @@ LINK_MESSAGE = 'Ciao! Ecco i link ai nostri gruppi telegram e social vari\n\n' \
                '<a href=\"https://www.twitch.tv/bicoccagaming\">Twitch</a>\n' \
                '<a href=\"https://www.instagram.com/bicocca.gaming/?hl=it\">Instagram</a>\n' \
                '<a href=\"https://steamcommunity.com/groups/BicoccaGaming\">Steam</a>'
+
+HELP_MESSAGE_GROUP = 'Ciao! Sono qui per accogliere i nuovi membri del gruppo, ' \
+                     'se vuoi chiedermi altro scrivimi in privato.'
+
+HELP_MESSAGE = 'Ciao! Premi /start per vedere i nostri link! ' \
+               'E basta, non faccio molto altro per adesso, magari un giorno imparerò qualcosa di nuovo.'
