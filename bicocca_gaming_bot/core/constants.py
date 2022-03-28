@@ -1,9 +1,5 @@
-RULES = 'MESSAGGIO ' \
-                  'LUNGO ' \
-                  'IN ' \
-                  'PRIVATO\n\n' \
-                  'che avrò quando qualcuno del consiglio si prenderà lo sbatti di scriverlo ' \
-                  'ed è l\'unico motivo per cui il bot non è ancora operativo'
+WELCOME_MESSAGE = f'Qui potrai parlare di gaming e gioco di ruolo e fare amicizia con altri giocatori.\n\n' \
+                  f'Dicci qualcosa di te, a cosa giochi?'
 
 # LINK_GRUPPI = '<a href="https://t.me/bicoccaGamingeSportsLoL"></a>' \
 #              '<a href="https://t.me/BicoccaGamingPokemon></a>' \
@@ -17,4 +13,13 @@ RULES = 'MESSAGGIO ' \
 
 # LINKTREE = 'https://linktr.ee/bicoccagaming'
 
-LINK_MESSAGE = 'messaggio con tanti link belli tipo <a href="https://linktr.ee/bicoccagaming">questo</a>'
+LINK_MESSAGE = 'Ciao! Ecco i link ai nostri gruppi telegram e social vari\n\n' \
+               '<a href=\"https://t.me/bicoccaGamingeSportsLoL\">LoL</a>\n' \
+               '<a href=\"https://t.me/BicoccaGamingPokemon\">Pokémon</a>\n' \
+               '<a href=\"https://t.me/bicoccaValorant\">Valorant</a>\n' \
+               '<a href=\"https://t.me/BicoccaGamingMagic\">Magic</a>\n' \
+               '<a href=\"https://t.me/bicoccaTTRPGGaming\">TTRPG</a>\n\n' \
+               '<a href=\"https://discord.com/invite/TnmmhrgFab\">Discord</a>\n' \
+               '<a href=\"https://www.twitch.tv/bicoccagaming\">Twitch</a>\n' \
+               '<a href=\"https://www.instagram.com/bicocca.gaming/?hl=it\">Instagram</a>\n' \
+               '<a href=\"https://steamcommunity.com/groups/BicoccaGaming\">Steam</a>'
